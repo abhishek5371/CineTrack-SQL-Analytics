@@ -1,22 +1,39 @@
-# 🎬 CineTrack: 100-Question SQL Analytics Challenge
+# 🎬 CineTrack: The 100-Question SQL Analytics Suite
+
+![Banner](https://img.shields.io/badge/CineTrack-SQL_Project-blue?style=for-the-badge)
+![100](https://img.shields.io/badge/Questions_Solved-100%2F100-success?style=for-the-badge)
 
 ## 📌 Project Overview
-CineTrack is a relational database project designed to manage a large-scale movie ecosystem. This project demonstrates end-to-end data engineering skills, from schema design and Python-based data automation to complex analytical querying.
+CineTrack is an end-to-end SQL case study. I designed a relational database from scratch, automated the generation of **1,500+ records** using Python, and performed a deep-dive analysis across **100 business-critical questions**.
 
-## 🏗️ Architecture & Scale
-- **Schema:** Many-to-Many relationship between Movies and Actors via a Junction Table.
-- **Data Volume:** 1,000 Movies, 500 Actors, and ~4,000 Cast relationships.
-- **Automation:** Python script utilizing the `Faker` library for realistic synthetic data.
+---
 
-## 📁 File Directory
-- **01_database_full_project.sql:** The "Master Script" (Database creation + 100 Queries).
-- **02 & 03 Python Scripts:** Scripts used for automated data generation.
-- **04_database_setup.sql:** Clean schema definition (DDL).
-- **05_cinetrack_queries.sql:** The full 100-query analysis suite.
-- **08_CineTrack_100_Questions.pdf:** The official project question bank.
+### 🏗️ Database Architecture
+The system is built on a **Many-to-Many** relationship model, ensuring data integrity and scalability.
 
-## 📈 SQL Mastery Levels
-1. **Easy:** CRUD operations and basic filtering.
-2. **Intermediate:** Aggregations (`GROUP BY`), String functions, and Summaries.
-3. **Advanced:** Multi-table `JOINs` and complex `Subqueries`.
-4. **Maintenance:** Business Logic (`CASE` statements) and Data Cleaning.
+
+
+* **Movies:** 1,000 Records
+* **Actors:** 500 Records
+* **Relationships:** ~4,000 unique cast assignments
+
+---
+
+### 📁 Repository Navigation
+| File | Purpose |
+| :--- | :--- |
+| **01_full_project.sql** | The complete Master Script |
+| **02_data_gen.py** | Python ETL & Automation |
+| **04_schema.sql** | DDL (Table Structures) |
+| **08_questions.pdf** | Official Project Specification |
+
+---
+
+### 🚀 Key Technical Skills Demonstrated
+* **Relational Design:** Primary/Foreign Keys, Junction Tables, Cascading Deletes.
+* **Complex Joins:** Triple-table Joins (Movies ↔ Cast ↔ Actors).
+* **Advanced Logic:** CTEs (simulated), Subqueries, and `CASE` statements for BI reporting.
+* **Data Engineering:** Automated synthetic data generation using the `Faker` library.
+
+---
+*Created as a comprehensive SQL Portfolio Project - 2026*
